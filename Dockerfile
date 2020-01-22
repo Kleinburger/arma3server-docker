@@ -7,7 +7,7 @@ RUN  apt-get update && apt-get install -y lib32gcc1 lib32stdc++6 wget net-tools
 RUN  apt-get clean 
 RUN  apt-get update
 RUN  dpkg --add-architecture i386
-RUN  apt-get install --fix-missing -y lib32gcc1 libstdc++6 libstdc++6:i386 libtbb2:i386 libtbb2 wget net-tools binutils libssl1.0.0:i386 curl jq
+RUN  apt-get install --fix-missing -y lib32gcc1 libstdc++6 libtbb2 wget net-tools binutils libssl1.0.0 curl jq
 
 RUN cd /root \
 	&& wget http://media.steampowered.com/installer/steamcmd_linux.tar.gz \
